@@ -8,12 +8,12 @@ OBJDIR = obj
 SOURCES = $(wildcard $(SRCDIR)/*.cpp)
 OBJECTS = $(patsubst $(SRCDIR)/%.cpp,$(OBJDIR)/%.o,$(SOURCES))
 
-all: clean libcurves.so main
+all: clean main
 
 libcurves.so: $(OBJECTS)
 	$(CC) -shared -o libcurves.so $(OBJECTS)
 
-main: $(OBJECTS) main.cpp
+main: libcurves.so main.cpp
 	$(CC) $(CFLAGS) -o main main.cpp $(LDFLAGS)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp

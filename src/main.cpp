@@ -41,7 +41,7 @@ int main() {
       });
 
   //  Calculating the total sum of radii using parallel calculations
-  std::cout << "6 and 8 point" << std::endl;
+  std::cout << "6 and 8 points" << std::endl;
   double sum_rad = CalculateSumOfRadii(circles);
   std::cout << "sum radius=" << sum_rad << std::endl;
 
