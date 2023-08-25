@@ -29,7 +29,7 @@ style:
 	 curves/*.h \
 	 curves/*.cpp \
 
-valgrind: libcurves.so main
+valgrind: main
 	valgrind --leak-check=full --suppressions=openmp.supp ./main
 
 clean:
