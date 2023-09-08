@@ -1,7 +1,8 @@
 #ifndef SRC_CIRCLE_H_
 #define SRC_CIRCLE_H_
 
-#include "common_structures.h"
+#include "common_functions.h"
+#include "general_structures.h"
 
 class Circle : public Curve {
  public:

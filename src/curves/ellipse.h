@@ -1,7 +1,8 @@
 #ifndef SRC_ELLIPSE_H_
 #define SRC_ELLIPSE_H_
 
-#include "common_structures.h"
+#include "common_functions.h"
+#include "general_structures.h"
 
 class Ellipse : public Curve {
  public:

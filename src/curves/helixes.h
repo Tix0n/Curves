@@ -1,7 +1,8 @@
 #ifndef SRC_HELIXES_H_
 #define SRC_HELIXES_H_
 
-#include "common_structures.h"
+#include "common_functions.h"
+#include "general_structures.h"
 
 class Helixes : public Curve {
  public:

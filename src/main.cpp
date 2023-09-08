@@ -9,8 +9,9 @@
 #include <vector>
 
 #include "./curves/circle.h"
-#include "./curves/common_structures.h"
+#include "./curves/common_functions.h"
 #include "./curves/ellipse.h"
+#include "./curves/general_structures.h"
 #include "./curves/helixes.h"
 
 std::vector<std::shared_ptr<Curve>> CreateContainer();
